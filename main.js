@@ -23,17 +23,31 @@ Output =>
 
 */
 
-function MultiByNum1OrNum2() {
-  // WRITE YOUR CODE UNDER THIS LINE         
+var arrOfNum1 = [1, 5, 2]
+
+function MultiByNum1OrNum2(arr, num1, num2) {
+
+  var result = []
+  result = arr.map(x => {
+    if (x % num1 === 0) {
+      x *= num1
+    } else {
+      x *= num2
+    }
+    return x
+  })
+  return result
 }
+// console.log(MultiByNum1OrNum2(2,6))
+
 
 /* Q2:
 Using Filter
 Create a function called longerAndYounger
 that takes an array of objects and 2 numbers as a parameter
 and return a new array with the object has 
-a name longer than the first parameter
-and in the same time less than the second parameters 
+a name longer than the second parameter
+and in the same time the age less than the third parameter 
 
 var arrOfObj1 = [
   { name: "alex" ,age:22},
@@ -57,9 +71,34 @@ Output =>
   { name: "mercer",age:26}
 ]
 */
+var arrOfObj1 = [{
+    name: "alex",
+    age: 22
+  },
+  {
+    name: "mercer",
+    age: 26
+  },
+  {
+    name: "alice",
+    age: 33
+  },
+  {
+    name: "zaheer",
+    age: 35
+  },
+  {
+    name: "elizabeth",
+    age: 45
+  }
+]
 
-function longerAndYounger() {
-  // WRITE YOUR CODE UNDER THIS LINE         
+function longerAndYounger(arr, num1, num2) {
+  var ageres;
+  ageres = arr.filter(x => {
+
+  })
+  return ageres
 }
 
 /* Q3:
@@ -89,8 +128,12 @@ Output =>
 "alice, fried chiken, pizaa, burger, hot dog, eggs"
   
 */
-function nameAndAllFoods() {
-  // WRITE YOUR CODE UNDER THIS LINE         
+function nameAndAllFoods(arr, num) {
+  // WRITE YOUR CODE UNDER THIS LINE 
+
+
+  
+  return output
 }
 
 
@@ -110,4 +153,5 @@ You need to write the solution in the q4.html file
 3. Using jQuery add these logic to q4.html in the same file:
   a. when click on the button with id "no"  => cahnge the color of the div with class "main" to red
   b. when click on the button with id "yes" => cahnge the color of the div with class "main" to green
+
 */
